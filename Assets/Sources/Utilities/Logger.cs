@@ -1,6 +1,4 @@
 using Balthazariy.Settings;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Balthazariy.Utilities

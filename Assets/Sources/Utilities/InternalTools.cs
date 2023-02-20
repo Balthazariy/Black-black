@@ -1,4 +1,3 @@
-using Balthazariy.Settings;
 using DG.Tweening;
 using Newtonsoft.Json;
 using System;
@@ -277,6 +276,8 @@ namespace Balthazariy.Utilities
 
         public static string FormatNum(float num)
         {
+            string[] NUMBER_ABBREVIATIONS = { "", "K", "M", "B", "T", "Qua", "Quin", "Sex", "Sept", "Oct", "Non", "Deci" };
+
             if (num == 0) return "0";
 
             int i = 0;
@@ -289,7 +290,5 @@ namespace Balthazariy.Utilities
 
             return num.ToString("#.##") + NUMBER_ABBREVIATIONS[i];
         }
-
-        private static string[] NUMBER_ABBREVIATIONS = { "", "K", "M", "B", "T", "Qua", "Quin", "Sex", "Sept", "Oct", "Non", "Deci" };
     }
 }
